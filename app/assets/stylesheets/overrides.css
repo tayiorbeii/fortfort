@@ -223,7 +223,7 @@ label {
 	width: 100% !important;
 }
 
-h1 #logo {
+#logo {
   font-family: 'Open Sans' !important;
   font-weight: 900;
   font-size: 90px;

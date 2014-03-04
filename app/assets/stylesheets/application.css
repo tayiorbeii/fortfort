@@ -11,28 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-h1 #logo {
-  font-family: 'Open Sans' !important;
-  font-weight: 900;
-  font-size: 90px;
-  text-align: center;
-  text-shadow: 
-  				0px 1px 0px #3A4652,
-  				1px 2px 0px #3A4652,
-  				2px 3px 0px #3A4652,
-  				3px 4px 0px #3A4652,
-  				4px 5px 0px #3A4652,
-  				5px 6px 0px #3A4652,
-  				6px 7px 0px #3A4652,
-  				7px 8px 0px #3A4652,
-  				8px 9px 0px #3A4652,
-  				9px 10px 0px #3A4652,
-  				10px 11px 0px #3A4652,
-  				11px 12px 0px #3A4652;
-}
-
-p {
-	font-family: 'Open Sans';
-	font-weight: 700;
-}
