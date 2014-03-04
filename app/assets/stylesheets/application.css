@@ -12,7 +12,7 @@
  *= require_tree .
  */
 
-h1 {
+h1 #logo {
   font-family: 'Open Sans' !important;
   font-weight: 900;
   font-size: 90px;

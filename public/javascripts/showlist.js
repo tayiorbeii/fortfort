@@ -3790,9 +3790,6 @@ var wednesday = [
 ];
 
 $(document).ready(function(){
-
-
-
     var showTemplate = _.template($("#show-template").html());
     var resultingHtml = showTemplate({shows : wednesday});
 
