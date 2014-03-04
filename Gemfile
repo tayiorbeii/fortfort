@@ -50,3 +50,6 @@ end
 # For heroku
 gem 'rails_12factor', group: :production
 
+#for underscore.js
+gem 'underscore-rails'
+
