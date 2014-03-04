@@ -3844,6 +3844,13 @@ $(document).ready(function(){
 
 
 
+   $('#schedule_wrapper').dataTable( {
+    "fnDrawCallback": function( oSettings ) {
+        $('#schedule_wrapper').find('div').addClass('go100');
+
+    }
+  } );
+
 
 
 
