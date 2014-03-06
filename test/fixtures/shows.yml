@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  venue_id: 
+  artist_id: 
+  date_of_show: 
+
+two:
+  venue_id: 
+  artist_id: 
+  date_of_show: 

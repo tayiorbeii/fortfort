@@ -1,4 +1,5 @@
 Fortfort::Application.routes.draw do
+  get "tv/index"
   get "schedule/index"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
