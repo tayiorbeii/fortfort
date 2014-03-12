@@ -2,11 +2,14 @@
 <script>this.container.html(this.ledgerTemplate());
     $('table').dataTable();</script>
   <p class="sideways">Turn your phone sideways for advanced filtering.</p>
+  <div id="mediapreview">
+  
+</div>
 				
 				<div class="show-list">
 					
 				</div><!-- end show-list -->
-        <div class="test"></div>
+        
 			</div><!-- end page -->
 			<script type="text/template" id="show-template">
 			<div class="container">
@@ -32,17 +35,27 @@
 					<tr class="showlist">                       
                         <td data-th="Date"><span class="time"><%%= show.date %></span></td>
                         <td data-th="Time"><span class="time"><%%= show.time %></span></td>
-                        <td data-th="Artist"><span class="artist"><%%= show.artist %></span></td>
+                        <td data-th="Artist"><span class="artist"><%%= show.artist %></span>
+                         <%% if (show.media != "") { %>
+                          <button class="preview">P</button>
+                        <%% } %></td>
                         <td data-th="Venue"><span class="venue"><%%= show.venue %></span></td>
                     </tr>
 			<%% }); %>
                 </tbody>
                 </table>
                 </div>
-                
+                <script>
+
+                $(".preview").click(function () {
+                  var artist = $(this).closest("tr").find(".artist").text();
+                  lookUp(artist);
+
+                });</script>    
 			</script>
 
 			<script src="javascripts/jquery.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script src="https://datatables.net/download/build/jquery.dataTables.min.js"></script>
 			<script src="javascripts/dataTables.bootstrap.js"></script>
  			<script src="javascripts/underscore.js"></script>

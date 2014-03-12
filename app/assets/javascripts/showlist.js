@@ -1,4 +1,4 @@
-var wednesday = [
+var schedule = [
 {
     artist: "Splinter ",
     venue: "El Korah Shrine",
@@ -3789,12 +3789,15 @@ var wednesday = [
 
 ];
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
 
 
     var showTemplate = _.template($("#show-template").html());
-    var resultingHtml = showTemplate({shows : wednesday});
+    var resultingHtml = showTemplate({shows : schedule});
+    var scheduleJSON = jQuery.parseJSON(schedule);
+    alert(scheduleJSON);
+
 
     $(".show-list").html(resultingHtml);
     $('.show').on('click', 'button.toggle', function(ev) {
@@ -3851,8 +3854,17 @@ $(document).ready(function(){
         }
     } );
 
-     
+    function lookUp(band) {
+            alert("called lookup");
+        for (var i = 0; i < schedule.length; i++) {
+            if ((schedule[i].artist) === band) {
+                media = (schedule[i].media);
+                $("#mediapreview").html(media[0]);
+                break;
+            }
+        }
+    }
 
+ // });
 
-
- });
+   
