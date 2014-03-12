@@ -3867,6 +3867,13 @@ var schedule = [
         }
     }
 
+    $(".preview").click(function () {
+                  var artist = $(this).closest("tr").find(".artist").text();
+
+                  lookUp(artist);
+
+                });
+
  // });
 
    
