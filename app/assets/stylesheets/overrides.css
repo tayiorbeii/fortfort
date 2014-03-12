@@ -220,4 +220,12 @@ p {
   font-weight: 700;
 }
 
+.btn-warning { 
+    background-color: #9FA1A5; 
+    border-color: #9FA1A5;
+}
 
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+    background-color: #C96A51;
+    border-color: #C96A51;
+}

@@ -3855,11 +3855,13 @@ var schedule = [
     } );
 
     function lookUp(band) {
-            alert("called lookup");
+
         for (var i = 0; i < schedule.length; i++) {
             if ((schedule[i].artist) === band) {
                 media = (schedule[i].media);
-                $("#mediapreview").html(media[0]);
+                $(".mediapreview").html(media[0]);
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+
                 break;
             }
         }
