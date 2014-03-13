@@ -52,7 +52,21 @@
 
                   lookUp(artist);
 
-                });</script>    
+                });</script>  
+                <script>
+                function lookUp(band) {
+
+        for (var i = 0; i < schedule.length; i++) {
+            if ((schedule[i].artist) === band) {
+                media = (schedule[i].media);
+                $(".mediapreview").html(media[0]);
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+
+                break;
+            }
+        }
+    }
+                </script>  
 			</script>
 
 			<script src="javascripts/jquery.js"></script>
