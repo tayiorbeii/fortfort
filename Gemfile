@@ -58,3 +58,7 @@ gem 'bootstrap-sass'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 
 gem 'youtube_search'
+
+group :production, :staging do
+  gem 'rails_12factor'
+end
