@@ -1,4 +1,5 @@
 Fortfort::Application.routes.draw do
+  get "sched2/index"
   get "tv/index"
   get "schedule/index"
   get "home/index"

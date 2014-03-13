@@ -3789,7 +3789,7 @@ var schedule = [
 
 ];
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
 
 
@@ -3808,8 +3808,11 @@ var schedule = [
         $this.text($this.text() === 'Show Songs' ? 'Hide Songs' : 'Show Songs');
         $this.parents('.show').find('.song').toggle();
     });
+/////////////
 
 
+
+/////////////
     var oTable = $('#schedule').dataTable( {
         "oLanguage": {
             "sSearch": "Search Schedule:"
@@ -3853,6 +3856,8 @@ var schedule = [
 
         }
     } );
+
+});
 
     function lookUp(band) {
 
