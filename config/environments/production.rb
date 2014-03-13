@@ -79,5 +79,5 @@ Fortfort::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   #trying this to see
-  
+
 end
