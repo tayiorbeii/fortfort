@@ -3859,18 +3859,18 @@ $(document).ready(function(){
 
 });
 
-    function lookUp(band) {
+    // function lookUp(band) {
 
-        for (var i = 0; i < schedule.length; i++) {
-            if ((schedule[i].artist) === band) {
-                media = (schedule[i].media);
-                $(".mediapreview").html(media[0]);
-                $('html, body').animate({ scrollTop: 0 }, 'slow');
+    //     for (var i = 0; i < schedule.length; i++) {
+    //         if ((schedule[i].artist) === band) {
+    //             media = (schedule[i].media);
+    //             $(".mediapreview").html(media[0]);
+    //             $('html, body').animate({ scrollTop: 0 }, 'slow');
 
-                break;
-            }
-        }
-    }
+    //             break;
+    //         }
+    //     }
+    // }
 
     $(".preview").click(function () {
                   var artist = $(this).closest("tr").find(".artist").text();
