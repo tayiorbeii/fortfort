@@ -60,3 +60,4 @@ gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-ra
 
 gem 'youtube_search'
 
+gem 'font-awesome-rails'

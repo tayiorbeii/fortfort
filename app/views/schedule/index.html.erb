@@ -37,7 +37,7 @@
                         <td data-th="Time"><span class="time"><%%= show.time %></span></td>
                         <td data-th="Artist"><span class="artist"><%%= show.artist %></span>
                          <%% if (show.media != "") { %>
-                          <button class="preview btn btn-xs btn-warning"><span class="glyphicon glyphicon-play"></span></button>
+                          <button class="preview btn btn-xs btn-warning"><i class="fa fa-play"></i></button>
                         <%% } %></td>
                         <td data-th="Venue"><span class="venue"><%%= show.venue %></span></td>
                     </tr>
@@ -49,7 +49,6 @@
                 //I am so, so sorry for this... rest assured, there will be refactoring when I learn what the shit I'm doing.
                 //(refactoring most likely to happen after Treefort!)
                 //In the meantime, it's not a terrible hack considering it's my first time with Rails and JS...
-                //hit me up on Twitter for scorn/encouragement? @taylorbell
                 var schedule = [
 {
     artist: "Splinter ",
