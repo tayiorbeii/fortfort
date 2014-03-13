@@ -79,5 +79,7 @@ Fortfort::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   #trying this to see
+  config.assets.precompile += %w( '.woff', '.eot', '.svg', '.ttf' )
+
 
 end
