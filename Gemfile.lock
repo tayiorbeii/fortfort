@@ -47,6 +47,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    fitvidsjs_rails (1.1.0)
+      railties (>= 3.1)
     font-awesome-rails (4.0.3.1)
       railties (>= 3.2, < 5.0)
     hike (1.2.3)
@@ -129,6 +131,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  fitvidsjs_rails
   font-awesome-rails
   jbuilder (~> 1.2)
   jquery-datatables-rails!
